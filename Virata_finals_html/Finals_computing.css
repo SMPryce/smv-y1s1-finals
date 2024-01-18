@@ -1,0 +1,817 @@
+/*Import Lato font family*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+* {
+  font-family: "Lato";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 4em;
+  color: white;
+}
+
+.parallax_wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+.parallax_wrapper .intro_screen {
+  position: absolute;
+  height: 100vh;
+  background: url(Me.JPG) top center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transform: translateZ(-1px) scale(1.1);
+  font-weight: 100;
+}
+.parallax_wrapper .intro_screen .smv {
+  display: flex;
+  align-items: center;
+  right: 20%;
+}
+.parallax_wrapper .outro_screen {
+  height: 100vh;
+  background-image: url(Contacts_bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax_wrapper .outro_screen .Contact_title {
+  position: absolute;
+  font-weight: 100;
+  font-size: 6vw;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  top: 5%;
+  left: 5%;
+}
+.parallax_wrapper .outro_screen .email_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 5%;
+}
+.parallax_wrapper .outro_screen .email_container .email {
+  align-items: center;
+  width: 35vw;
+  height: 10vh;
+}
+.parallax_wrapper .outro_screen .email_container .email .email_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 32%;
+}
+.parallax_wrapper .outro_screen .email_container .email .email_title {
+  position: absolute;
+  align-items: center;
+  top: 1%;
+  left: 7%;
+}
+.parallax_wrapper .outro_screen .email_container .email .email_title .emai_icon {
+  top: 12%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .outro_screen .linkedin_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 60%;
+  left: 5%;
+}
+.parallax_wrapper .outro_screen .linkedin_container .linkedin {
+  align-items: center;
+  width: 35vw;
+  height: 10vh;
+}
+.parallax_wrapper .outro_screen .linkedin_container .linkedin .linked_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 32%;
+}
+.parallax_wrapper .outro_screen .linkedin_container .linkedin .linked_titled {
+  position: absolute;
+  align-items: center;
+  top: 1%;
+  left: 7%;
+}
+.parallax_wrapper .outro_screen .linkedin_container .linkedin .linked_titled .linked_icon {
+  top: 12%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .outro_screen .citation_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 90%;
+  left: 4%;
+}
+.parallax_wrapper .outro_screen .citation_container .citation {
+  align-items: left;
+  border-radius: 20px;
+  width: 100vw;
+  height: 10vh;
+}
+.parallax_wrapper .outro_screen .citation_container .citation .citation_txt {
+  position: absolute;
+  font-size: 1.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: left;
+}
+.parallax_wrapper .parallax_group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.parallax_wrapper .parallax_group .parallax_layer {
+  position: absolute;
+  inset: 0;
+}
+.parallax_wrapper .parallax_group .base_layer {
+  transform: translateZ(-300px) scale(2.1);
+}
+.parallax_wrapper .parallax_group .base_layer .intro {
+  position: absolute;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  top: 10%;
+  left: 5%;
+}
+.parallax_wrapper .parallax_group .base_layer .intro .profile_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 90%;
+  left: 3%;
+}
+.parallax_wrapper .parallax_group .base_layer .intro .profile_container .profile {
+  align-items: center;
+  border-radius: 20px;
+  width: 10vw;
+  height: 60vh;
+}
+.parallax_wrapper .parallax_group .base_layer .intro .profile_container .profile .profile_title {
+  position: absolute;
+  align-items: center;
+  top: 5%;
+  left: 5%;
+}
+.parallax_wrapper .parallax_group .base_layer .intro .profile_container .profile .profile_title .profile_img {
+  align-items: center;
+  width: 22vw;
+}
+.parallax_wrapper .parallax_group .base_layer .ECA_title {
+  position: absolute;
+  font-weight: 100;
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  top: 30%;
+  left: 8%;
+}
+.parallax_wrapper .parallax_group .base_layer .cg_title {
+  position: absolute;
+  font-weight: 100;
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  bottom: 10%;
+  left: 30%;
+}
+.parallax_wrapper .parallax_group .mid_layer {
+  transform: translateZ(0);
+}
+.parallax_wrapper .parallax_group .mid_layer .intro_caption {
+  position: absolute;
+  width: 60vw;
+  font-weight: 300;
+  font-size: 4.5vh;
+  display: flex;
+  align-items: center;
+  top: 20%;
+  left: 35%;
+  text-align: justify;
+}
+.parallax_wrapper .parallax_group .mid_layer .acad_title {
+  position: absolute;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  top: 5%;
+  right: 29%;
+}
+.parallax_wrapper .parallax_group .mid_layer .MO_title {
+  position: absolute;
+  font-weight: 100;
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+  top: 30%;
+  right: 15%;
+}
+.parallax_wrapper .parallax_group .mid_layer .ECA_Caption {
+  position: absolute;
+  width: 35vw;
+  font-weight: 300;
+  font-size: 4.5vh;
+  display: flex;
+  align-items: center;
+  top: 20%;
+  right: 10%;
+  text-align: justify;
+}
+.parallax_wrapper .parallax_group .mid_layer .RI_title {
+  position: absolute;
+  width: 30vw;
+  top: 30%;
+  left: 35%;
+  text-align: center;
+  font-weight: 100;
+  font-size: 6vw;
+  text-shadow: 2px 2px 15px rgb(5, 21, 25);
+}
+.parallax_wrapper .parallax_group .mid_layer .sac_title {
+  position: absolute;
+  font-weight: 100;
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  top: 20%;
+  left: 8%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_1_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20%;
+  left: 10%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_1_container .cg_1 {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 35vw;
+  height: 18vh;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_1_container .cg_1 .cg_1_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 12%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_1_container .cg_1 .cg_1title {
+  position: absolute;
+  align-items: center;
+  top: 12%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_1_container .cg_1 .cg_1title .cg_1_icon {
+  top: 12%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_2_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20%;
+  right: 10%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_2_container .cg_2 {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 35vw;
+  height: 18vh;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_2_container .cg_2 .cg_2_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 12%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_2_container .cg_2 .cg_2title {
+  position: absolute;
+  align-items: center;
+  top: 12%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_2_container .cg_2 .cg_2title .cg_2_icon {
+  top: 12%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_3_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  right: 32%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_3_container .cg_3 {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 35vw;
+  height: 18vh;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_3_container .cg_3 .cg_3_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 12%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_3_container .cg_3 .cg_3title {
+  position: absolute;
+  align-items: center;
+  top: 12%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .mid_layer .cg_3_container .cg_3 .cg_3title .cg_3_icon {
+  top: 12%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .mid_layer .testimonials_title {
+  position: absolute;
+  font-weight: 100;
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+  top: 30%;
+  right: 10%;
+}
+.parallax_wrapper .parallax_group .mid_layer .portfolio_title {
+  position: absolute;
+  font-weight: 100;
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  top: 30%;
+  left: 12%;
+}
+.parallax_wrapper .parallax_group .top_layer {
+  transform: translateZ(210px) scale(0.3);
+}
+.parallax_wrapper .parallax_group .top_layer .acad_jhs_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 25%;
+  left: 10%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_jhs_container .acad_jhs {
+  align-items: center;
+  background: rgb(38, 90, 107);
+  border-radius: 20px;
+  width: 25vw;
+  height: 50vh;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_jhs_container .acad_jhs .acad_jhs_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  left: 7%;
+  top: 50%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_jhs_container .acad_jhs .acad_jhs_title {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  font-size: 6vh;
+  top: 5%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_jhs_container .acad_jhs .acad_jhs_title .acad_jhs_icon {
+  top: 10%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_shs_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 25%;
+  left: 40%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_shs_container .acad_shs {
+  align-items: center;
+  background: rgb(38, 90, 107);
+  border-radius: 20px;
+  width: 25vw;
+  height: 50vh;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_shs_container .acad_shs .acad_shs_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  left: 9%;
+  top: 50%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_shs_container .acad_shs .acad_shs_title {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  font-size: 6vh;
+  top: 5%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_shs_container .acad_shs .acad_shs_title .acad_shs_icon {
+  top: 20%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_coll_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 25%;
+  right: 5%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_coll_container .acad_coll {
+  align-items: center;
+  background: rgb(38, 90, 107);
+  border-radius: 20px;
+  width: 25vw;
+  height: 50vh;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_coll_container .acad_coll .acad_coll_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  left: 9%;
+  top: 50%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_coll_container .acad_coll .acad_coll_title {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  font-size: 6vh;
+  top: 5%;
+  left: 33%;
+}
+.parallax_wrapper .parallax_group .top_layer .acad_coll_container .acad_coll .acad_coll_title .acad_coll_icon {
+  top: 10%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .top_layer .MO_caption {
+  position: absolute;
+  width: 40vw;
+  font-weight: 300;
+  font-size: 4.5vh;
+  display: flex;
+  align-items: center;
+  top: 25%;
+  left: 10%;
+  text-align: justify;
+}
+.parallax_wrapper .parallax_group .top_layer .research_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 25%;
+  left: 8%;
+}
+.parallax_wrapper .parallax_group .top_layer .research_container .research {
+  align-items: center;
+  background-color: rgb(83, 134, 145);
+  border-radius: 40px;
+  width: 25vw;
+  height: 70vh;
+  box-shadow: 2px 2px 20px rgb(5, 21, 25);
+}
+.parallax_wrapper .parallax_group .top_layer .research_container .research .res_txt {
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  left: 7%;
+  top: 55%;
+}
+.parallax_wrapper .parallax_group .top_layer .research_container .research .research_count {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  font-weight: 100;
+  font-size: 12vw;
+  top: 5%;
+  left: 35%;
+}
+.parallax_wrapper .parallax_group .top_layer .internship_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 25%;
+  right: 6%;
+}
+.parallax_wrapper .parallax_group .top_layer .internship_container .internship {
+  align-items: center;
+  background-color: rgb(83, 134, 145);
+  border-radius: 40px;
+  width: 25vw;
+  height: 70vh;
+  box-shadow: 2px 2px 20px rgb(5, 21, 25);
+}
+.parallax_wrapper .parallax_group .top_layer .internship_container .internship .intern_txt {
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  left: 4%;
+  top: 55%;
+}
+.parallax_wrapper .parallax_group .top_layer .internship_container .internship .intern_count {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  font-weight: 100;
+  font-size: 12vw;
+  top: 5%;
+  left: 35%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_1_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 10%;
+  right: 10%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_1_container .skill_1 {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 26vw;
+  height: 18vh;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_1_container .skill_1 .skill_1_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 12%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_1_container .skill_1 .skill_1_title {
+  position: absolute;
+  align-items: center;
+  top: 12%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_1_container .skill_1 .skill_1_title .skill_1_icon {
+  top: 12%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_2_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 30%;
+  right: 10%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_2_container .skill_2 {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 26vw;
+  height: 18vh;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_2_container .skill_2 .skill_2_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 20%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_2_container .skill_2 .skill_2_title {
+  position: absolute;
+  align-items: center;
+  top: 12%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_2_container .skill_2 .skill_2_title .skill_2_icon {
+  top: 10%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_3_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  right: 10%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_3_container .skill_3 {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 26vw;
+  height: 18vh;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_3_container .skill_3 .skill_3_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 15%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_3_container .skill_3 .skill_3_title {
+  position: absolute;
+  align-items: center;
+  top: 12%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_3_container .skill_3 .skill_3_title .skill_3_icon {
+  top: 10%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_4_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 70%;
+  right: 10%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_4_container .skill_4 {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 26vw;
+  height: 18vh;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_4_container .skill_4 .skill_4_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 20%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_4_container .skill_4 .skill_4_title {
+  position: absolute;
+  align-items: center;
+  top: 12%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .top_layer .skill_4_container .skill_4 .skill_4_title .skill_4_icon {
+  top: 10%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .top_layer .testimonial_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20%;
+  left: 10%;
+}
+.parallax_wrapper .parallax_group .top_layer .testimonial_container .testimonial {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 35vw;
+  height: 40vh;
+}
+.parallax_wrapper .parallax_group .top_layer .testimonial_container .testimonial .testimonial_txt {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 27%;
+  top: 20%;
+}
+.parallax_wrapper .parallax_group .top_layer .testimonial_container .testimonial .testimonial_caption {
+  position: absolute;
+  font-size: 3.5vh;
+  font-weight: 300;
+  text-align: left;
+  align-items: center;
+  left: 5%;
+  top: 50%;
+}
+.parallax_wrapper .parallax_group .top_layer .testimonial_container .testimonial .testimonial_title {
+  position: absolute;
+  align-items: center;
+  top: 12%;
+  left: 7%;
+}
+.parallax_wrapper .parallax_group .top_layer .testimonial_container .testimonial .testimonial_title .testimonial_icon {
+  top: 12%;
+  align-items: center;
+  width: 4vw;
+}
+.parallax_wrapper .parallax_group .top_layer .portfolio_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20%;
+  right: 1%;
+}
+.parallax_wrapper .parallax_group .top_layer .portfolio_container .portfolio {
+  align-items: center;
+  background: rgb(5, 21, 25);
+  border-radius: 20px;
+  width: 50vw;
+  height: 60vh;
+}
+.parallax_wrapper .parallax_group .top_layer .portfolio_container .portfolio .portfolio_title {
+  position: absolute;
+  align-items: center;
+  top: 5%;
+  left: 5%;
+}
+.parallax_wrapper .parallax_group .top_layer .portfolio_container .portfolio .portfolio_title .portfolio_img {
+  align-items: center;
+  width: 45vw;
+}
+.parallax_wrapper #intro {
+  z-index: 0;
+}
+.parallax_wrapper #group-1 {
+  z-index: -1;
+}
+.parallax_wrapper #group-1 > .base_layer {
+  background-color: rgb(5, 21, 25);
+}
+.parallax_wrapper #group-2 > .mid_layer {
+  background-color: rgb(15, 44, 50);
+}
+.parallax_wrapper #group-3 > .mid_layer {
+  background-color: rgb(36, 87, 97);
+}
+.parallax_wrapper #group-4 {
+  z-index: -1;
+}
+.parallax_wrapper #group-4 > .base_layer {
+  background-color: rgb(94, 142, 154);
+}
+.parallax_wrapper #group-5 > .mid_layer {
+  background-color: rgb(137, 177, 186);
+}
+.parallax_wrapper #group-6 > .mid_layer {
+  background-color: rgb(83, 134, 145);
+}
+.parallax_wrapper #group-7 {
+  z-index: -1;
+}
+.parallax_wrapper #group-7 > .base_layer {
+  background-color: rgb(38, 90, 107);
+}
+.parallax_wrapper #group-8 > .mid_layer {
+  background-color: rgb(11, 37, 46);
+}
+.parallax_wrapper #group-9 > .mid_layer {
+  background-color: rgb(123, 151, 161);
+}/*# sourceMappingURL=Finals_computing.css.map */
